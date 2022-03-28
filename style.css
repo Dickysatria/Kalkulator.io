@@ -1,0 +1,75 @@
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url("bg.jpg");
+    }
+  
+    .border {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      min-height: 100vh;
+      grid-template-columns: repeat(4, 80px);
+      grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+      }
+  
+      .border > button {
+        cursor: pointer;
+        font-size: 2rem;
+        border: 1px, solid #FFFFFF;
+        outline: none;
+        background-color: rbga(255, 255, 255, 0.75);
+      }
+  
+        .border > button:hover {
+          background-color: #517ccc;
+        }
+  
+        .span-two {
+          grid-column: span 2;
+          color: white;
+          background-color: rgb(10, 70, 235);
+        }
+  
+        .hasil{
+          grid-column: 1 / -1;
+          background-color: rgba(19, 87, 165, 0.37);
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-around;
+          flex-direction: column;
+          padding: 10px;
+          word-wrap: break-word;
+          word-break: break-all;
+        }
+  
+        .hasil .previous-operand{
+          color: rgba(255,255, 255, 0.75);
+          font-size: 1.5rem;
+        }
+  
+        .hasil .current-operand{
+          color: white;
+          font-size: 2.5rem;
+        }
+
+        nav{
+            background-color: rgb(44, 115, 196);
+            padding-top: 3%;
+            padding-bottom:2%;
+        }
+        footer{
+            padding-bottom:2%;
+            padding-top: 1%;
+        }
+
+        h1{
+            text-align: center;
+            color: aliceblue;
+        }
+
+        footer h1{
+            color: rgba(12, 12, 14, 0.979);
+        }
+  
